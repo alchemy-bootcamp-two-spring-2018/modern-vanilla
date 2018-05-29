@@ -1,6 +1,6 @@
 import Template from './Template.js';
-import ipsumList from './ipsumData.js';
-import ipsumViewer from './ipsumViewer.js';
+import IpsumList from './ipsumList.js';
+import IpsumViewer from './ipsumViewer.js';
 
 const template = new Template(() => {
     return `
@@ -14,12 +14,18 @@ const template = new Template(() => {
 
 export default class App {
     render() {
+        const dom = template.render();
+
         const ipsumList = new IpsumList(selected => {
             ipsumViewer.update(selected);
         });
 
 const section = dom.getElementById('list');
 const listDom = ipsumList.render();
+section.appendChild(listDom);
+
+const ipsumViewer = new IpsumViewer();
+const viewer = dom.getElementById('viewer');
 section.appendChild(ipsumViewer.render());
     
     return dom;

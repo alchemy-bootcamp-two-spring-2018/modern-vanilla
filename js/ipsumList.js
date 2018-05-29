@@ -1,5 +1,5 @@
 import Template from './Template.js';
-import ipsum from './ipsumList.js';
+import ipsum from './ipsumData.js';
 
 const template = new Template(({ length }) => `
     <h2>${length} Ipsums</h2>
@@ -13,8 +13,8 @@ const ipsumTemplate = new Template(({ title }) => `
 `);
 
 export default class IpsumList {
-    cosntructor(onSelect) {
-        this.IpsumList = ipsum;
+    constructor(onSelect) {
+        this.ipsumList = ipsum;
         this.onSelect = onSelect;
     }
 
