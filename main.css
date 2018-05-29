@@ -1,0 +1,38 @@
+#content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.data {
+    cursor: pointer;
+}
+
+.data:hover {
+    background: #eee;
+}
+
+#list {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    border: 1px solid blue;
+}
+
+#viewer {
+    padding: 20px;
+    width: 600px;
+    border: 1px solid orange;
+}
+
+#viewer img {
+    max-height: 400px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
