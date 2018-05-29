@@ -4,8 +4,7 @@ import data from './data.js';
 const listTemplate = new Template(({ length }) => `
     <h2>${length} Books</h2>
     <ul class="list"></ul>
-    `
-);
+`);
 
 
 const dataTemplate = new Template(({ author, title }) => `

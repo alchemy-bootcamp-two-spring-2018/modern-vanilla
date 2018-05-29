@@ -2,11 +2,16 @@ import Template from './Template.js';
 
 const template = new Template(({ author, title, publishedOn, body, image }) => {
     return `
+    <div>
     <img id="image" src=${image}>
-    <h1 id="book-title">${title}</h1>
-    <h4 id="author">${author}</h4>
+    <h1 id="book-title">Title: ${title}</h1>
+    <h4 id="author">Author: ${author}</h4>
     <h6 id="date-published">Published: ${publishedOn}</h6>
-    <p id="about-book">${body}</p>
+    <div id="about-book">
+        <h4>About</h4>
+        <p>${body}</p>
+    </div>
+    </div>
     `;
 });
 
