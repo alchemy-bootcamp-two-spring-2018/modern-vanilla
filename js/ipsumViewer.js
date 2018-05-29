@@ -7,8 +7,8 @@ const template = new Template(({ title, author, authorUrl, category, body }) => 
     <li>Author: ${author}</li>
     <li>Author URL: ${authorUrl}</li>
     <li>Category: ${category}</li>
-    <li>Example: ${body}</li>
     </ul>
+    <p><strong>Example: </strong><br>${body}</p>
     `;
 
 });

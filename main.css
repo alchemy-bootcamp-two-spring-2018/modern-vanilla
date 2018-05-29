@@ -7,6 +7,13 @@ h2 {
     font-size: 2.0em;
     color: rgba(0, 0, 0 , .5);
 }
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.0em;
+    color: rgba(0, 0, 0 , .7);
+
+}
+
 ul {
     list-style: none;
     padding: 4px;
@@ -32,6 +39,15 @@ float: right;
 width: 62%;
 border: 1px solid black;
 min-height: 600px;
+padding: 10px;
+}
+p{
+ font-family: sans-serif;
+    font-size: 1.3em;
 
-
+}
+img {
+    display: block;
+    margin: 10px;
+    max-height: 300px;
 }
