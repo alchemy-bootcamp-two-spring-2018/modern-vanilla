@@ -7,9 +7,10 @@ const listTemplate = new Template(({ length }) => `
     `
 );
 
+
 const dataTemplate = new Template(({ author, title }) => `
     <li class="data"> 
-        ${author}: ${title}
+        <strong>${author}:</strong> <em>${title}</em>
     </li>
     
 `);
@@ -17,7 +18,7 @@ const dataTemplate = new Template(({ author, title }) => `
 export default class IpsumList {
     constructor(onSelect) {
         this.dataList = data;
-    //     this.onSelect = onSelect;
+        this.onSelect = onSelect;
     }
 
     render() {
@@ -26,9 +27,10 @@ export default class IpsumList {
         this.dataList.map(data => {
             const dom = dataTemplate.render(data);
             const li = dom.querySelector('li');
-            // this.onSelect(ipsums):
+            li.addEventListener('click', () => {
+                this.onSelect(data);
+            });
             ul.appendChild(dom);
-
         });
 
 

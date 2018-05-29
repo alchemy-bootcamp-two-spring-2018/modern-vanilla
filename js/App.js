@@ -15,7 +15,9 @@ export default class App {
     render() {
         const dom = template.render();
 
-        const ipsumList = new IpsumList;
+        const ipsumList = new IpsumList(selected => {
+            console.log(selected);
+        });
         const section = dom.getElementById('list');
         const listDom = ipsumList.render();
 
