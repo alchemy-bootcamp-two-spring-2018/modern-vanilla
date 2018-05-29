@@ -1,0 +1,39 @@
+main {
+    display: grid;
+    grid-template: 100px auto / 30% auto;
+    grid-template-areas: 
+        "header header"
+        "list viewer";
+}
+
+h1 {
+    grid-area: header;
+}
+
+#list {
+    grid-area: list;
+}
+
+#viewer {
+    grid-area: viewer;
+    transition: opacity 2s ease-in;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    top { opacity: 1; }
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+
+img {
+    max-width: 200px;
+}
