@@ -5,7 +5,7 @@ Modern Vanilla: Ipsum Viewer
 
 Complete [today's Kata.](https://www.codewars.com/kata/fixme-replace-all-dots)
 
-## Lab 
+## Lab
 
 Create a ipsum viewer that displays a lists of ipsum's and when an ipsum is clicked, it shows a detail view with full information.
 
