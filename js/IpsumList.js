@@ -1,6 +1,7 @@
 import Template from './Template.js';
 import ipsums from './data.js';
 
+
 const template = new Template(() => {return `
     <h1>iPsum Shizz</h1>
     <ul class="list"></ul>
@@ -25,12 +26,14 @@ export default class IpsumList {
 
         this.ipsumList.map(ipsums => {
             const dom = ipsumTemplate.render(ipsums);
-            // const li = dom.querySelector('li');
-            // li.addEventListener('click', () => {
-            //     this.onSelect(ipsums);
-            // });
+            const li = dom.querySelector('li');
+            li.addEventListener('click', () => {
+                this.onSelect(ipsums);   
+            });
             ul.appendChild(dom);
         });
+
+        dom.appendChild(ul);
 
         return dom;
     }

@@ -5,18 +5,14 @@ const template = new Template(({ title, body }) =>`
     <p>${ body }</p>
 `);
 
+
 export default class IpsumList {
 
     update(selected) {
-        while(this.section.lastElementChild) {
-            this.section.lastElementChild.remove();
-        }
-        this.section.appendChild(template.render(selected));
+        return template.render(selected);
     }
 
     render() {
-        this.section = 'Choos an ipsum plz';
-        // console.log(this.section);
-        return this.section;
+        return template.render({ title: 'choos an iPsome plz', body: '' });
     }
 }

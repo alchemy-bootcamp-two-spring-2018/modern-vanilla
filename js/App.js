@@ -1,36 +1,34 @@
 import Template from './Template.js';
 import IpsumList from './IpsumList.js';
-// import IpsumViewer from './IpsumViewer.js';
+import IpsumViewer from './IpsumViewer.js';
 
 const template = new Template(() => {return `
-        <main>
-            <section id="list"></section>
-            <section id="viewer"></section>
-        </main>
+    <main>
+        <section id="list"></section>
+        <section id="viewer"></section>
+    </main>
 `;
 });
 
 export default class App {
     render() {
         const dom = template.render();
-        // const sections = dom.querySelectorAll('section');
-
-        // console.log('seciton', sections);
 
         const sectionList = dom.getElementById('list');
-        console.log(sectionList);
-        const ipsumList = new IpsumList(() => {
-            // ipsumViewer.update(selected);
+        const ipsumList = new IpsumList((selected) => {
+            while(this.sectionViewer.lastElementChild) {
+                this.sectionViewer.lastElementChild.remove();
+            }
+            this.sectionViewer.appendChild(ipsumViewer.update(selected));
         });
 
-        // const sectionViewer = dom.getElementById('viewer');
-        // console.log(sectionViewer);
-        // const ipsumViewer = new IpsumViewer();
+        this.sectionViewer = dom.getElementById('viewer');
+        const ipsumViewer = new IpsumViewer();
 
-        // console.log(ipsumList.render());
         sectionList.appendChild(ipsumList.render());
-        console.log(sectionList);
-        // sectionViewer.appendChild(ipsumViewer.render());
+        this.sectionViewer.appendChild(ipsumViewer.render());
+        dom.appendChild(sectionList);
+        dom.appendChild(this.sectionViewer);
         return dom;
     }
 }

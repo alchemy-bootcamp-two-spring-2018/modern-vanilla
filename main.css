@@ -1,0 +1,39 @@
+li {
+    list-style: none;
+}
+
+li:hover {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+body {
+    margin: 33px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+#list {
+    text-align: left;
+    display: inline-block;
+    width: 15%;
+    height: 500px;
+    padding: 13px;
+    overflow: auto;
+    border: 3px solid black;
+}
+
+#viewer {
+    text-align: left;
+    display: inline-block;
+    padding: 13px;
+    width: 75%;
+    height: 500px;
+    overflow: auto;
+    border: 3px solid black;
+}
+
+img {
+    float: right;
+}
