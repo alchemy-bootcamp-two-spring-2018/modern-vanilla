@@ -15,14 +15,16 @@ App
   + IpsumViewer
 ```
 
-## State
+## Component Details
 
 * `App` 
     * owns the "selected" state (initially `null`)
-    * passes Ipsum List a callback function, `onSelect`
+    * passes `IpsumList` a callback function, `onSelect`
+    * displays the two child components
 * `IpsumList`
-    * owns the "ipsums" state (initially import of `js/data/js`)
+    * owns the "ipsum list" state (initially import of `js/data.js`)
     * calls the passed `onSelect` when an ipsum is selected, _passing the corresponding object_ to the `onSelect` function
+    * show name and category (maybe find images?)
 * `IpsumViewer`
     * gets passed the `selected` (only via `update`)
     * if `selected` is `null` displays message to make a selection
