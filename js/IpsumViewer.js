@@ -19,7 +19,9 @@ export default class IpsumViewer {
 
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'Please select an ipsum';
+        this.li = document.createElement('li');
+        this.li.textContent = 'Please select an ipsum';
+        this.section.appendChild(this.li);
         return this.section;
     }
 }
