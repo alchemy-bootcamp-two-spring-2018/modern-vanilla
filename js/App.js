@@ -1,13 +1,13 @@
 import Template from './Template.js';
-import Viewer from './Viewer.js';
-import data from './data.js';
+import IpsumViewer from './IpsumViewer.js';
+import IpsumList from './IpsumList.js';
 
 const template = new Template(() => {
     return `
         <main>
             <h1>Ipsum Viewer</h1>
-            <section id='list'></section>
-            <section id='viewer'></section>
+            <section id="list"></section>
+            <section id="viewer"></section>
         </main>
     `;
 });
@@ -16,9 +16,15 @@ export default class App {
     render() {
         const dom = template.render();
 
-        const viewerSection = dom.getElementById('viewer');
-        const viewerComponent = new Viewer();
-        viewerSection.appendChild(viewerComponent.render());
+        const ipsumListSection = dom.getElementById('list');
+        const ipsumListComponent = new IpsumList((selected) => {
+            console.log(selected, 'was selected.');
+        });
+        ipsumListSection.appendChild(ipsumListComponent.render());
+
+        const ipsumViewerSection = dom.getElementById('viewer');
+        const ipsumViewerComponent = new IpsumViewer();
+        ipsumViewerSection.appendChild(ipsumViewerComponent.render());
 
 
         return dom;

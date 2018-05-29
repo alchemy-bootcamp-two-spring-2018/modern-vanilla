@@ -7,7 +7,7 @@ const template = new Template(() => {
 
 });
 
-export default class Viewer {
+export default class IpsumViewer {
     render() {
         const dom = template.render();
 
