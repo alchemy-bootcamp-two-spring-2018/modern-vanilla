@@ -1,5 +1,5 @@
 import Template from './Template.js';
-import Ipsum from './data.js';
+import ipsum from './data.js';
 
 const template = new Template(({ length }) => `
     <h2>${length} Data Objects</h2>
@@ -31,6 +31,7 @@ export default class IpsumList {
             ul.appendChild(dom);
         });
         return dom;
+
     }
 }
 
