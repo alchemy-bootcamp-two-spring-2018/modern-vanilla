@@ -3,7 +3,7 @@ import Template from './Template.js';
 import loremIpsumType from './data.js';
 
 const template = new Template(({length}) => `
-    <h2>${length} Lorem Ipsum Type</h2>
+    <h2>${length} Lorem Ipsum Options: </h2>
     <ul class="list"></ul>
 `);
 
