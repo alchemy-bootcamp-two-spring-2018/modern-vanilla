@@ -4,33 +4,68 @@ body {
 
 main {
     display: grid;
-    grid-template: 100px auto / 30% auto;
+    grid-template: 805px 100px 1000px / 20% 20% auto;
     grid-template-areas: 
-        "header header"
-        "list viewer";
+        "header header header"
+        ". . ."
+        "title list viewer";
     font-family: 'Muli', sans-serif;
     
 }
-
-.header {
-    grid-area: header;
-    background: url('artur-pokusin-737-unsplash.jpg');
+#title {
+    grid-area: title;
+    padding: 20px;
 }
 
 h1 {
     font-family: 'Ovo', serif;
+    font-size: 7em;
+}
 
+#title>h1 {
+    position: relative;
+    top: 550px;
+    transform: rotate(-90deg);
+    color: #4A849F;
+    margin: 0px;
+}
+
+header {
+    grid-area: header;
+    background-image: url('artur-pokusin-737-unsplash.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#list {
+    grid-area: list;
+    padding: 20px;
+}
+
+header>h1 {
+    font-size: 7em;
+    color: white;
+    position: relative;
+    top: 500px;
 }
 
 h2 {
     font-family: 'Ovo', serif;
 }
-#list {
-    grid-area: list;
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    
 }
 
 .list>li {
     transition:all 0.3s ease;
+    font-size: 1.25em;
+    line-height: 1.75em;
 }
 
 .list>li:hover {
@@ -40,6 +75,7 @@ h2 {
 #viewer {
     grid-area: viewer;
     transition: opacity 2s ease-in;
+    padding: 20px;
 }
 
 @keyframes fadein {
@@ -59,4 +95,5 @@ h2 {
 
 img {
     max-width: 200px;
+    margin: 10px;
 }

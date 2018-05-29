@@ -8,7 +8,7 @@ const viewerTemplate = new Template(({ title, category, author, authorUrl, publi
         <h4>Author: ${author} / ${authorUrl}</h4>
         <p>${body}</p>
         <h6>Published on: ${publishedOn}</h6>
-        </section>
+    </section>
     `;
 
 });

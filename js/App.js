@@ -6,8 +6,11 @@ const template = new Template(() => {
     return `
         <main>
             <header>
-                <h1>Ipsum Viewer</h1>
+                <h1>fill the void</h1>
             </header>
+            <section id="title">
+                <h1>ipsumArchive</h1>
+            </section>
             <section id="list"></section>
             <section id="viewer"></section>
         </main>
