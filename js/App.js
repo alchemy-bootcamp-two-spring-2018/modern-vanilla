@@ -26,7 +26,7 @@ export default class App {
 
         const ipsumViewer = new IpsumViewer();
         const viewer = dom.getElementById('viewer');
-        section.appendChild(ipsumViewer.render());
+        viewer.appendChild(ipsumViewer.render());
 
         return dom;
     }
