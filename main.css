@@ -1,17 +1,40 @@
+body {
+    margin: 0px;
+}
+
 main {
     display: grid;
     grid-template: 100px auto / 30% auto;
     grid-template-areas: 
         "header header"
         "list viewer";
+    font-family: 'Muli', sans-serif;
+    
+}
+
+.header {
+    grid-area: header;
+    background: url('artur-pokusin-737-unsplash.jpg');
 }
 
 h1 {
-    grid-area: header;
+    font-family: 'Ovo', serif;
+
 }
 
+h2 {
+    font-family: 'Ovo', serif;
+}
 #list {
     grid-area: list;
+}
+
+.list>li {
+    transition:all 0.3s ease;
+}
+
+.list>li:hover {
+    background: #B4D6C6;
 }
 
 #viewer {
