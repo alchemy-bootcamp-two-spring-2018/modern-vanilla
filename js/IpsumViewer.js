@@ -5,7 +5,7 @@ const viewerTemplate = new Template(({ title, category, author, authorUrl, publi
     <section>
         <h2>${title}</h2>
         <h3>Category: ${category}</h3>
-        <h4>Author: ${author} / ${authorUrl}</h4>
+        <h4>Author: <a href="${authorUrl}" target="_blank">${author}</a></h4>
         <p>${body}</p>
         <h6>Published on: ${publishedOn}</h6>
     </section>
@@ -28,8 +28,7 @@ export default class IpsumViewer {
     }
     render() {
         this.section = document.createElement('section');
-        this.section.classList = 'load';
-        this.section.textContent = 'Please select an Ipsum';
+        this.section.textContent = 'make a selection';
         return this.section;
     }
 }
