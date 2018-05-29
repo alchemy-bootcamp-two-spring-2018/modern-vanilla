@@ -16,3 +16,5 @@ export default class Template {
         return templateElement.content;
     }
 }
+
+
