@@ -9,7 +9,7 @@ const template = new Template(({ length }) => `
 const ipsumTemplate = new Template(({ title, author }) => `
     <li class="ipsum">
         ${title} by: ${author}
-        </li>
+        </li></br>
 `);
 
 export default class IpsumList {
@@ -34,12 +34,3 @@ export default class IpsumList {
 
     }
 }
-
-
-
-
-
-
-// render () {
-//     const dom = template.render(this.)
-// }

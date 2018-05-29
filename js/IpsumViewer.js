@@ -9,7 +9,7 @@ const template = new Template(({ title, author, category, authorUrl, publishedOn
         <li><a href="${authorUrl}">Link to Work</a></li>
         <li>Published on: ${publishedOn}</li>
     </ul>
-    <p>${body}</p>
+    <p class="bodyInfo">${body}</p>
     `;
 });
 
@@ -19,12 +19,14 @@ export default class IpsumViewer {
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
-
+        
         this.section.appendChild(template.render(ipsum));
     }
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'Please Choose a Document.';
+        let spanElement = document.createElement('span');
+        spanElement.textContent = 'Please Choose a Document.';
+        this.section.appendChild(spanElement);
         return this.section;
     }
 }
