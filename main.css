@@ -1,0 +1,8 @@
+.ipsum {
+    list-style: none;
+    cursor: pointer;
+}
+
+.ipsum:hover {
+    background: lightgrey;
+}
