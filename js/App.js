@@ -18,7 +18,7 @@ export default class App {
 
         const ipsumListSection = dom.getElementById('list');
         const ipsumListComponent = new IpsumList((selected) => {
-            console.log(selected, 'was selected.');
+            ipsumViewerComponent.update(selected);
         });
         ipsumListSection.appendChild(ipsumListComponent.render());
 

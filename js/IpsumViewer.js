@@ -10,9 +10,18 @@ const viewerTemplate = new Template(() => {
 
 
 export default class IpsumViewer {
-    render() {
-        const dom = viewerTemplate.render();
+    update(ipsum) {
+        while(this.section.lastElementChild) {
+            this.section.lastElementChild.remove();
+        }
 
-        return dom;
+        this.section.appendChild(viewerTemplate.render());
+    }
+    render() {
+        this.section = document.createElement('section');
+        this.section.textContent = 'Please select an Ipsum';
+
+
+        return this.section;
     }
 }
