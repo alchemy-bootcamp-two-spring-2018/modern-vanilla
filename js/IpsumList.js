@@ -23,7 +23,7 @@ export default class IpsumList {
     render() {
         const dom = template.render(this.IpsumList);
         const ul = dom.querySelector('ul');
-        
+
         this.IpsumList.map(ipsumItem => {
             const dom = itemTemplate.render(ipsumItem);
             const li = dom.querySelector('li');

@@ -9,6 +9,7 @@ const template = new Template((ipsumItem) => {
         <li>Author: ${ipsumItem.author}</li>
         <li>URL: ${ipsumItem.authorUrl}</li>
         <li>Date Published: ${ipsumItem.publishedOn}</li>
+        <li>Example Text: ${ipsumItem.body}</li>
     </ul>
     `;
 });
@@ -25,7 +26,7 @@ export default class IpsumViewer {
 
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'Please select a ipsum option';
+        this.section.textContent = 'Please select an ipsum option';
         return this.section;
     }
 }

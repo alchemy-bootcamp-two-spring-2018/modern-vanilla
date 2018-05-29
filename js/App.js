@@ -16,12 +16,12 @@ export default class App {
     render() {
         const dom = template.render();
        
-        const pokemonList = new IpsumList(selected => {
+        const ipsumList = new IpsumList(selected => {
             ipsumViewer.update(selected);
         });
 
         const section = dom.getElementById('list');
-        const listDom = pokemonList.render();
+        const listDom = ipsumList.render();
         section.appendChild(listDom);
 
         const ipsumViewer = new IpsumViewer();
