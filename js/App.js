@@ -20,14 +20,14 @@ export default class App {
             ipsumViewer.update(selected);
         });
 
-const section = dom.getElementById('list');
-const listDom = ipsumList.render();
-section.appendChild(listDom);
+        const section = dom.getElementById('list');
+        const listDom = ipsumList.render();
+        section.appendChild(listDom);
 
-const ipsumViewer = new IpsumViewer();
-const viewer = dom.getElementById('viewer');
-section.appendChild(ipsumViewer.render());
-    
-    return dom;
+        const ipsumViewer = new IpsumViewer();
+        const viewer = dom.getElementById('viewer');
+        section.appendChild(ipsumViewer.render());
+
+        return dom;
     }
 }
