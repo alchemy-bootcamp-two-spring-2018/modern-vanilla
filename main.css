@@ -29,8 +29,7 @@ ul, li  {
 }
 
 #viewer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     width: 60%;
     border: 1px solid orange;
 }
