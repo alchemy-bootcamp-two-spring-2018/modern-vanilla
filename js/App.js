@@ -5,8 +5,8 @@ import IpsumList from './IpsumList.js';
 const template = new Template (() => {
     return `
         <main>
-            <h1>Ipsum Viewer</h1>
-            <section id="list">list</section>
+            <h1>Ipsum Book List</h1>
+            <section id="list"></section>
             <section id="viewer">viewer</section>
         </main>
     `;

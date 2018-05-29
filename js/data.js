@@ -1,6 +1,6 @@
 export default [
     {
-        title:       'Bob Ross Ipsum',
+        title:       'Happy Little Ipsum',
         category:    'art',
         author:      'Bob Ross',
         authorUrl:   'https://en.wikipedia.org/wiki/Bob_Ross',

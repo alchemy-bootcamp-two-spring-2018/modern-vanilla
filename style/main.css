@@ -1,0 +1,13 @@
+
+#list {
+    border-style: solid;
+    width: 20%;
+    height: 500px;
+    float: left;
+    overflow-x: auto;
+
+}
+#viewer {
+    border-style: solid;
+    width: 100%;
+}
