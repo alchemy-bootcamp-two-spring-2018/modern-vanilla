@@ -1,4 +1,5 @@
 import Template from './Template.js';
+import IpsumList from './IpsumList.js';
 
 const template = new Template (() => {
     return `
@@ -14,11 +15,14 @@ export default class App {
     render() {
         const dom = template.render();
         
-        const section = dom.getElementById{'list'};
-        const listDom = ipsumList.render();
-        section.appendCh
+        const IpsumList = new IpsumList(selected);
 
+        const section = dom.getElementById('list');
+        const listDom = IpsumList.render();
+        section.appendChild(listDom);
 
         return dom;
+
+
     }
 }

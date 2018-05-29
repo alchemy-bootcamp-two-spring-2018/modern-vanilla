@@ -6,6 +6,34 @@ const template = new Template(({ length }) => `
     <ul class ="list"></ul>
 `);
 
+const ipsumTemplate = new Template(({ title, author }) => `
+    <li class="ipsum">
+        ${title} by: ${author}
+        </li>
+`);
+
+export default class IpsumList {
+    constructor(onSelect) {
+        this.ipsumList = ipsum;
+        this.onSelect = onSelect;
+    }
+
+    render() {
+        const dom = template.render(this.ipsumList);
+        const ul = dom.querySelector('ul');
+
+        this.ipsumList.map(ipsum => {
+            const dom = ipsumTemplate.render(ipsum);
+            const li = dom.querySelector('li');
+            li.addEventListener('click', () => {
+                this.onSelect(ipsum);
+            });
+            ul.appendChild(dom);
+        });
+        return dom;
+    }
+}
+
 
 
 
