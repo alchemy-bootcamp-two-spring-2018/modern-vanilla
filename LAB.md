@@ -31,7 +31,6 @@ App
 
 ## Requirements
 
-* Use "props" (objects with properties) to pass data in `constructor` and `update`. Package and destructure as needed.
 * No use of `document.` in components, use template literals to create html. `IpsumList` can create individual items without needing child components.
 
 ## Rubric
