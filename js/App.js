@@ -15,7 +15,7 @@ const template = new Template (() => {
 export default class App {
     render() {
         const dom = template.render();
-        
+
         const ipsumList = new IpsumList(selected => {
             ipsumViewer.update(selected);
         });

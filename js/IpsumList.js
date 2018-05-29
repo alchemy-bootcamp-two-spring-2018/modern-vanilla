@@ -2,7 +2,7 @@ import Template from './Template.js';
 import ipsum from './data.js';
 
 const template = new Template(({ length }) => `
-    <h2>${length} Data Objects</h2>
+    <h2 style="text-align: center;">${length} Data Objects</h2>
     <ul class ="list"></ul>
 `);
 
