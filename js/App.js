@@ -5,7 +5,6 @@ import IpsumViewer from './IpsumViewer.js';
 const template = new Template(() => {
     return `
         <main>
-            <h1>Ipsum Viewer</h1>
             <section id="list"></section>
             <section id="viewer"></section>
         </main>
@@ -23,6 +22,11 @@ export default class App {
         const section = dom.getElementById('list');
         const listDom = ipsumList.render();
         section.appendChild(listDom);
+        
+        const ipsumViewer = new IpsumViewer();
+        const viewer = dom.getElementById('viewer');
+        viewer.appendChild(ipsumViewer.render());
+
 
         return dom;
     }

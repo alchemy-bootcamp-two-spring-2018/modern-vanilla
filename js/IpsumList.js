@@ -7,7 +7,7 @@ const template = new Template(({ length }) => `
 `);
 
 const ipsumTemplate = new Template(({ title, category }) => `
-    <li class="ipsum">
+    <li class="list">
         ${title} (${category})
     </li>
 `);
@@ -25,7 +25,9 @@ export default class IpsumList {
         this.ipsumList.map(ipsum => {
             const dom = ipsumTemplate.render(ipsum);
             const li = dom.querySelector('li');
-            //add event listener here
+            li.addEventListener('click', () => {
+                this.onSelect(ipsum);
+            });
             ul.appendChild(dom);
         });
 
