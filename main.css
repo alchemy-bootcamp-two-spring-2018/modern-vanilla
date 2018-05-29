@@ -2,22 +2,36 @@ body {
     font-family: sans-serif;
 }
 
+img {
+    float: right;
+    width: 200px;
+}
+
 #list {
     float: left;
-    width: 200px;
+    width: 300px;
     overflow-y: auto;
-    height: 500px;
-    border: 1px solid blue;
 }
 
 #viewer {
     height: 80%;
-    height: 500px;
     overflow: auto;
     padding: 5px;
-    border: 1px solid green;
 }
 
 .list {
     padding: 5px;
+}
+
+.item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.view-item {
+    list-style: none;
+}
+
+.item:hover {
+    background: rgb(219, 248, 214);
 }

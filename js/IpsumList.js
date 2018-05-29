@@ -1,22 +1,23 @@
-/* eslint indent: "off" */
+
 import Template from './Template.js';
 import ipsumData from './data.js';
 
+// expects to receive the list from data
 const template = new Template(({ length }) => `
     <h2>${length} Ipsum Options</h2>
     <ul class="list"></ul>
 `);
 
+// expects to receive an individual item from the list
 const itemTemplate = new Template(({ title, category }) => `
     <li class="item">
-        ${title} (${category})
+        <strong>${title}</strong> (${category})
     </li>
 `);
 
-
 export default class IpsumList {
     constructor(onSelect) {
-        this.IpsumList = ipsumData;
+        this.IpsumList = ipsumData; // ipsumData is imported above
         this.onSelect = onSelect;
     }
 

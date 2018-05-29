@@ -2,26 +2,25 @@ import Template from './Template.js';
 
 const template = new Template((ipsumItem) => {
     return `
-    <h4>${ipsumItem.title}</h4>
-    <ul>
-        <li>Title: ${ipsumItem.title}</li>
-        <li>Category: ${ipsumItem.category}</li>
-        <li>Author: ${ipsumItem.author}</li>
-        <li>URL: ${ipsumItem.authorUrl}</li>
-        <li>Date Published: ${ipsumItem.publishedOn}</li>
-        <li>Example Text: ${ipsumItem.body}</li>
+    <h3>${ipsumItem.title}</h3>
+    <ul class="view-item">
+        <li><strong>Category:</strong> ${ipsumItem.category}</li>
+        <li><strong>Author:</strong> ${ipsumItem.author}</li>
+        <li><strong>URL:</strong> <a href=${ipsumItem.authorUrl}>${ipsumItem.authorUrl}</a></li>
+        <li><strong>Date Published:</strong> ${ipsumItem.publishedOn}</li>
+        <li>${ipsumItem.body}</li>
     </ul>
     `;
 });
 
 export default class IpsumViewer {
 
-    update(ipsumOptions) {
+    update(ipsumItem) {
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
-
-        this.section.appendChild(template.render(ipsumOptions));
+        this.section.textContent = '';
+        this.section.appendChild(template.render(ipsumItem));
     }
 
     render() {
