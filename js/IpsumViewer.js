@@ -15,12 +15,12 @@ const template = new Template((ipsumItem) => {
 
 export default class IpsumViewer {
 
-    update(ipsumItem) {
+    update(selectedItem) {
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
-        this.section.textContent = '';
-        this.section.appendChild(template.render(ipsumItem));
+        this.section.textContent = ''; // remove 'please select' text
+        this.section.appendChild(template.render(selectedItem));
     }
 
     render() {
