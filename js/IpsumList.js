@@ -3,7 +3,7 @@ import ipsum from './data.js';
 
 const template = new Template(() => `
 
-    <h2># of Ipsums</h2>
+    <h2>Ipsums</h2>
 
     <ul id="list"></ul>
 `);

@@ -1,6 +1,6 @@
 import Template from './Template.js';
 import IpsumList from './IpsumList.js';
-// import IpsumViewer from './IpsumViewer.js';
+import IpsumViewer from './IpsumViewer.js';
 
 //template instance
 const template = new Template(() => {
@@ -25,9 +25,9 @@ export default class App {
         section.appendChild(listDom);
 
         //ipsumViewer section
-        // const ipsumViewer = new IpsumViewer();
-        // const viewer = dom.getElementById('ipsum-viewer-section');
-        // viewer.appendChild(ipsumViewer.render());
+        const ipsumViewer = new IpsumViewer();
+        const viewer = dom.getElementById('ipsum-viewer-section');
+        viewer.appendChild(ipsumViewer.render());
 
         return dom;
     }
