@@ -5,11 +5,11 @@ const template = new Template(() => `
 
     <h2># of Ipsums</h2>
 
-    <ul></ul>
+    <ul id="list"></ul>
 `);
 
 const ipsumTemplate = new Template(({ title, author }) => `
-    <li>
+    <li class="ipsum">
         ${title} (${author})
     </li>
 `);

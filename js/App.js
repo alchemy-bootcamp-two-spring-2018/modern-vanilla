@@ -16,7 +16,6 @@ const template = new Template(() => {
 export default class App {
     render() {
         const dom = template.render();
-        console.log('app dom', dom);
 
         //ipsumList section
         const ipsumList = new IpsumList();
