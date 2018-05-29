@@ -1,12 +1,18 @@
 import Template from './Template.js';
 import data from './data.js';
 
-const template = new Template(() => {
+const listTemplate = new Template(() => {
     return `
         <h2>IPSUM LIST</h2>
-        <ul class="list">
+        <ul class="list"></ul>
     `;
 
+});
+
+const ipsumTemplate = new Template(({ title }) => {
+    return `
+        <li>${title}</li>
+    `;
 });
 
 export default class IpsumList {
@@ -16,7 +22,18 @@ export default class IpsumList {
     }
 
     render() {
-        const dom = template.render();
+        const dom = listTemplate.render();
+        const ul = dom.querySelector('ul');
+
+        this.ipsumList.map(ipsum => {
+            const dom = ipsumTemplate.render(ipsum);
+            const li = dom.querySelector('li');
+            li.addEventListener('click', () => {
+                this.onSelect(ipsum);
+            });
+            ul.appendChild(dom);
+        });
+
 
         return dom;
     }

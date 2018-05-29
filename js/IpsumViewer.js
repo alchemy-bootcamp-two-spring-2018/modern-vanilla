@@ -1,15 +1,17 @@
 import Template from './Template.js';
 
-const template = new Template(() => {
+const viewerTemplate = new Template(() => {
     return `
-        <h2>NAME</h2>
+        <h2>VIEWER</h2>
     `;
 
 });
 
+
+
 export default class IpsumViewer {
     render() {
-        const dom = template.render();
+        const dom = viewerTemplate.render();
 
         return dom;
     }
