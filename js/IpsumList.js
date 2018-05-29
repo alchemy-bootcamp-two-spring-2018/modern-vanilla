@@ -8,9 +8,9 @@ const template = new Template(() => `
     <ul id="list"></ul>
 `);
 
-const ipsumTemplate = new Template(({ title, author }) => `
+const ipsumTemplate = new Template(({ title }) => `
     <li class="ipsum">
-        ${title} (${author})
+        ${title}
     </li>
 `);
 

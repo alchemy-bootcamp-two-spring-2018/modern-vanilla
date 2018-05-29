@@ -2,8 +2,9 @@ import Template from './Template.js';
 
 const template = new Template(({ title, author, category, authorUrl, publishedOn, body }) => {
     return `
-    <h4>${title} ${author}</h4>
+    <h4>${title}</h4>
     <ul>
+        <li>Author: ${author}</li>
         <li>Category: ${category}</li>
         <li>Author Url: ${authorUrl}</li>
         <li>Published on: ${publishedOn}</li>
