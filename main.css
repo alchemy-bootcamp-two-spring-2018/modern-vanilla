@@ -1,0 +1,21 @@
+section {
+    display: inline;
+}
+
+#list{
+    float: left;
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+    padding: 20px;
+    clear: left;
+    margin-right: 5px;
+}
+
+#viewer, #viewer > section {
+    height:500 px;
+    overflow: auto;
+    padding: 10px;
+
+}
+
