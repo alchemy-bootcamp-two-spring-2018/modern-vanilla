@@ -4,13 +4,13 @@ export default class Template {
         this.templateFunction = templateFunction;
     }
 
-    render(data) {
+    render() {
         // create a template element to convert string to html
         const templateElement = document.createElement('template');
 
-        // call the template function with the supplied data,
+        // call the template function with the supplied ,
         // and set the result as the innerHTML of the template element
-        templateElement.innerHTML = this.templateFunction(data);
+        templateElement.innerHTML = this.templateFunction();
 
         // return the document fragment that contains the actual DOM elements
         return templateElement.content;
