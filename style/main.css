@@ -1,16 +1,26 @@
 #root{
     text-align: center;
-    width: 95%;
+    width: 90%;
     margin: auto;
 
 }
-
+body {
+    background-color: rgb(248, 248, 220);
+}
 #list {
     border-style: solid;
     width: 20%;
-    height: 500px;
+    height: 650px;
     float: left;
     overflow-x: auto;
+}
+#header {
+    border-style: solid;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color:  rgb(206, 173, 90);
+    
 }
 .list {
     text-align: left;
@@ -19,11 +29,11 @@
 }
 .data:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color:  rgba(199, 179, 130, 0.795);
 }
 #viewer {
     border-style: solid;
-    height: 500px;
+    height: 650px;
     overflow: auto;
     margin: 0px;
 
@@ -39,4 +49,14 @@ h2 {
 #image {
     width: 400px;
 
+}
+li {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+hr {
+    margin: 0px;
+}
+ul {
+    margin-top: 2px;
 }

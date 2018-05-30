@@ -3,6 +3,7 @@ import data from './data.js';
 
 const listTemplate = new Template(({ length }) => `
     <h2>${length} Books</h2>
+    <hr>
     <ul class="list"></ul>
 `);
 
@@ -10,6 +11,7 @@ const listTemplate = new Template(({ length }) => `
 const dataTemplate = new Template(({ author, title }) => `
     <li class="data"> 
         <strong>${author}:</strong> <em>${title}</em>
+        <hr>
     </li>
     
 `);

@@ -5,7 +5,7 @@ import IpsumViewer from './IpsumViewer.js';
 const template = new Template (() => {
     return `
         <main>
-            <h1>Ipsum Book List</h1>
+            <h1 id="header">Ipsum Books</h1>
             <section id="list"></section>
             <section id="viewer"></section>
         </main>
