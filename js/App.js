@@ -6,8 +6,10 @@ const template = new Template(() => {
     return `
         <main>
             <h1>Ipsum Selector</h1>
+        
             <section id="list"></section>
             <section id="viewer"></section>
+        
         </main>
     `;
 });

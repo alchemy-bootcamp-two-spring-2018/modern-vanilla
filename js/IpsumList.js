@@ -2,8 +2,7 @@ import Template from './Template.js';
 import data from './data.js';
 
 const template = new Template(({ length }) => `
-    <h2>${length} Ipsums</h2>
-    <h3>Select an Ipsum</h3>
+    <h2>${length} Ipsum Options</h2>
     <ul class="list"></ul>
 `);
 

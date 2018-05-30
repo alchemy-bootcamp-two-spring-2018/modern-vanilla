@@ -1,8 +1,75 @@
+h1 {
+    grid-area: header;
+    text-align: center;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+h4 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 5% 35% 35%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "sidebar . main main"
+        "footer footer footer footer";
+}
+
+#list h2{
+    display: flex;
+    justify-content: center;
+}
+
+#list {
+    margin-left: 1em;
+}
+
+.list {
+    grid-area: sidebar;
+    padding: 2em;
+    background-color: rgb(52, 100, 135);
+    color: whitesmoke;
+    font-size: 1.25em;
+
+}
+
+.pull-left {
+    float: left;
+    max-width: 250px;
+    margin: .5em .75em .5em 0em;
+}
+
+.pull-right {
+    float: right;
+    max-width: 250px;
+    margin: .5em 0em .5em .75em;
+}
+
+#viewer {
+    grid-area: main;
+    padding-right: 2em;
+}
+
 .ipsum {
     list-style: none;
     cursor: pointer;
 }
 
 .ipsum:hover {
-    background: lightgrey;
+    background: black;
+    padding: .25em;
 }

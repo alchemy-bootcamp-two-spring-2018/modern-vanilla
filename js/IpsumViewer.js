@@ -1,10 +1,10 @@
 import Template from './Template.js';
 
-const template = new Template(({ title, category, author, body }) => {
+const template = new Template(({ title, category, publishedOn, body }) => {
     return `
         <h2>${title}</h2>
         <h3>Category: ${category}</h3>
-        <h4>Author: ${author}</h4>
+        <h4>Published: ${publishedOn}</h4> 
         <p>${body}</p>
     `;
 });
@@ -12,6 +12,7 @@ const template = new Template(({ title, category, author, body }) => {
 export default class IpsumViewer {
 
     update(data) {
+        this.section.textContent = '';
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
@@ -21,7 +22,7 @@ export default class IpsumViewer {
 
     render() {
         this.section = document.createElement('section');
-        // this.section.textContent = 'Please select an Ipsum';
+        this.section.textContent = 'Please select an Ipsum';
         return this.section;
     }
 }
