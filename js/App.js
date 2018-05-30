@@ -5,7 +5,7 @@ import IpsumViewer from './IpsumViewer.js';
 const template = new Template(() => {
 return `
         <main>
-            <h1>Lorem Ipsum Varieties</h1>
+            <h1>A SELECTION OF LOREM IPSUM GENERATORS: </h1>
             <section id="list"></section>
             <section id="viewer"></section>
         </main>
