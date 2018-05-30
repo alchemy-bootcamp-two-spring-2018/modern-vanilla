@@ -24,13 +24,6 @@ export default class IpsumList {
         const dom = listTemplate.render();
         const ul = dom.querySelector('ul');
 
-        // const categories = this.ipsumList.map(ipsum => {
-        //     const { category } = this.ipsumList[i];
-        //     return { category };
-        // })
-
-
-
         this.ipsumList.map(ipsum => {
             const dom = ipsumTemplate.render(ipsum);
             const li = dom.querySelector('li');
@@ -39,7 +32,6 @@ export default class IpsumList {
             });
             ul.appendChild(dom);
         });
-
 
         return dom;
     }
