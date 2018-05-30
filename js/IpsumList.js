@@ -28,7 +28,7 @@ export default class IpsumList {
             const dom = ipsumTemplate.render(ipsums);
             const li = dom.querySelector('li');
             li.addEventListener('click', () => {
-                this.onSelect(ipsums);   
+                this.onSelect(ipsums);
             });
             ul.appendChild(dom);
         });

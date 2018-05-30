@@ -21,7 +21,7 @@ App
     * owns the "selected" state (initially `null`)
     * passes Ipsum List a callback function, `onSelect`
 * `IpsumList`
-    * owns the "ipsums" state (initially import of `js/data/js`)
+    * owns the "ipsums" state (initially import of `js/data.js`)
     * calls the passed `onSelect` when an ipsum is selected, _passing the corresponding object_ to the `onSelect` function
 * `IpsumViewer`
     * gets passed the `selected` (only via `update`)
