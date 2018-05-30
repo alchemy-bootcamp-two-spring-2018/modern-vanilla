@@ -8,7 +8,7 @@ const template = new Template((ipsumItem) => {
         <li><strong>Author:</strong> ${ipsumItem.author}</li>
         <li><strong>URL:</strong> <a href=${ipsumItem.authorUrl}>${ipsumItem.authorUrl}</a></li>
         <li><strong>Date Published:</strong> ${ipsumItem.publishedOn}</li>
-        <li>${ipsumItem.body}</li>
+        <li class="ipsum">${ipsumItem.body}</li>
     </ul>
     `;
 });

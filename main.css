@@ -3,8 +3,16 @@ body {
 }
 
 img {
-    float: right;
     width: 200px;
+    margin: 10px;
+}
+
+img.pull-right {
+    float: right;
+}
+
+img.pull-left {
+    float: left;
 }
 
 #list {
@@ -21,6 +29,10 @@ img {
 
 .list {
     padding: 5px;
+}
+
+.ipsum {
+    text-align: justify;
 }
 
 .item {
