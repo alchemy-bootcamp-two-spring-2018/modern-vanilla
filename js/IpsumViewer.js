@@ -2,13 +2,13 @@ import Template from './Template.js';
 
 const template = new Template(({ title, author, category, authorUrl, publishedOn, body }) => {
     return `
-    <h4>${title}</h4>
-    <ul>
-        <li>Author: ${author}</li>
-        <li>Category: ${category}</li>
-        <li>Author Url: ${authorUrl}</li>
-        <li>Published on: ${publishedOn}</li>
-        <li>Sample Text: ${body}</li>
+    <h2 id="h2-viewer">${title}</h2>
+    <ul id="viewer">
+        <li class="ipsum" >Author: ${author}</li>
+        <li class="ipsum" >Category: ${category}</li>
+        <li class="ipsum" >Author Url: ${authorUrl}</li>
+        <li class="ipsum" >Published on: ${publishedOn}</li>
+        <li class="ipsum" >Sample Text: ${body}</li>
     </ul>
     `;
 });
@@ -16,7 +16,6 @@ const template = new Template(({ title, author, category, authorUrl, publishedOn
 export default class IpsumViewer {
 
     update(ipsum) {
-        //code block to update info every time user clicks on new ipsum
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
@@ -26,7 +25,7 @@ export default class IpsumViewer {
 
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'Please select an Ipsum';
+        
         return this.section;
     }
 }
