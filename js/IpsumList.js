@@ -6,9 +6,9 @@ const template = new Template(({ length }) => `
     <ul class="list"></ul>
 `);
 
-const ipsumTemplate = new Template(({ title, category }) => `
+const ipsumTemplate = new Template(({ title, category, author, authorUrl, publishedOn, body }) => `
     <li class="ipsum">
-        ${title} (${category})
+        ${title} (${category}) ${author} ${authorUrl} ${publishedOn} ${body}
     </li>
     `);
 
