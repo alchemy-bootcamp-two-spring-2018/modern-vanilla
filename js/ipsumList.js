@@ -7,6 +7,7 @@ const template = new Template(({ length }) => `
     `);
 const ipsumTemplate = new Template(({ title }) => `
 <li class="ipsum">
+
     ${title}
 </li>
 `);
