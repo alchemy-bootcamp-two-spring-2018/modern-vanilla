@@ -1,10 +1,10 @@
 import Template from './Template.js';
 
-const template = new Template(({ title, category, publishedOn, body }) => {
+const template = new Template(({ title, category, author, body }) => {
     return `
         <h2>${title}</h2>
         <h3>Category: ${category}</h3>
-        <h4>Published: ${publishedOn}</h4> 
+        <h4>Author: ${author}</h4>
         <p>${body}</p>
     `;
 });
@@ -18,6 +18,7 @@ export default class IpsumViewer {
         }
 
         this.section.appendChild(template.render(data));
+        return this.section;
     }
 
     render() {
