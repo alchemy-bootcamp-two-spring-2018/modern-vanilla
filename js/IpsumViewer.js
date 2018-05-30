@@ -12,7 +12,7 @@ const template = new Template(({ title, category, author, body }) => {
 export default class IpsumViewer {
 
     update(data) {
-        this.section.textContent = '';
+        this.header.textContent = '';
         while(this.section.lastElementChild) {
             this.section.lastElementChild.remove();
         }
@@ -23,7 +23,9 @@ export default class IpsumViewer {
 
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'Please select an Ipsum';
+        this.header = document.createElement('h2');
+        this.header.textContent = 'Select an Ipsum';
+        this.section.appendChild(this.header);
         return this.section;
     }
 }

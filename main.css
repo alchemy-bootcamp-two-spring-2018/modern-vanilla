@@ -1,8 +1,22 @@
+main {
+    display: grid;
+    grid-template-columns: 20% 3% 77%;
+    grid-template-rows: 100px 50px auto;
+    grid-template-areas:
+        "header header header"
+        "sub-header sub-header sub-header"
+        "sidebar . main";
+}
+
 h1 {
     grid-area: header;
-    text-align: center;
-    font-family: 'Permanent Marker';
-    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 4em;
+    margin: 0px;
+    height: 150px;
     background-image: url('banner.jpg');
     background-size: cover;
 }
@@ -10,6 +24,8 @@ h1 {
 h2 {
     display: flex;
     justify-content: flex-start;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.75em;
 }
 
 h3 {
@@ -26,14 +42,6 @@ h4 {
 }
 
 
-main {
-    display: grid;
-    grid-template-columns: 20% 3% 77%;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header"
-        "sidebar . main";
-}
 
 #list h2{
     display: flex;
@@ -41,11 +49,11 @@ main {
 }
 
 #list {
+    grid-area: sidebar;
     margin-left: 1em;
 }
 
 .list {
-    grid-area: sidebar;
     padding: 2em;
     background-color: rgb(52, 100, 135);
     color: whitesmoke;
