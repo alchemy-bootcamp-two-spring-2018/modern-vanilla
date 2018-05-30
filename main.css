@@ -2,3 +2,12 @@ img {
     height: 200px;
     width: auto;
 }
+li {
+    list-style: none;
+    margin-bottom: 50px;
+}
+body {
+    width: 70%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
