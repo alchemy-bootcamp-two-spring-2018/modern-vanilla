@@ -9,8 +9,7 @@ const template = new Template(() => {
             <section id="list"></section>
             <section id="viewer"></section>
         </main>
-
-        `;
+    `;
 });
 
 export default class App {
@@ -29,10 +28,5 @@ export default class App {
         viewer.appendChild(ipsumViewer.render());
 
         return dom;
-
-        
-
-        
-
     }
 }
