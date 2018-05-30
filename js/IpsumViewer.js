@@ -3,18 +3,18 @@ import Template from './Template.js';
 const template = new Template(({ title, category, author, authorUrl, publishedOn, body }) => {
     
     return `
-    <h4>My ${title} </h4>
+    <h4> ${title} </h4>
+    ${body}
     
     <ul>
-        <li>Category: ${category}</li>
-        <li>Author: ${author}</li>
-        <li>Author URL: ${authorUrl}</li>
-        <li>Published on: ${publishedOn}</li>
-        <li>Example: ${body}</li>
+        <li class="choice">Category: ${category}</li>
+        <li class="choice">Author: ${author}</li>
+        <li class="choice">Author URL: ${authorUrl}</li>
+        <li class="choice">Published on: ${publishedOn}</li>
     </ul> 
     `;
 });
-//lis above displayed once and only showed for Bob Ross and at bottom of page. now gone.
+//display on click, but after list of titles and categories
 
 
 export default class IpsumViewer {
@@ -29,6 +29,6 @@ export default class IpsumViewer {
         this.section = document.createElement('section');
         this.section.textContent = 'Please select an ipsum';
         return this.section;
-        //please select showing at bottom of page. rendering after 
+        //'please select' string showing at bottom of page. rendering after title list
     }     
 }

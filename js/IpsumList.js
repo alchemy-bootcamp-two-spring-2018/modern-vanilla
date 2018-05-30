@@ -7,7 +7,7 @@ const template = new Template(({ length }) => `
 `);
 //removed after title below: author, authorUrl, publishedOn, body
 const ipsumTemplate = new Template(({ title, category }) => `
-    <li>
+    <li id="main-list">
         ${title} (${category})
     </li>
 `);
