@@ -8,12 +8,23 @@ const template = new Template(({ title, category }) => {
     <ul>
         <li>Title:</li>
         <li>Category:</li>
-    </ul>
-        
+    </ul> 
         `;
-
 });
 
 export default class IpsumViewer { 
+    update(ipsum) {
+        while(this.section.lastElementChild) {
+            this.section.lastElementChild.remove();
+
+        }
+        this.section.appendChild(template.render(ipsum));
+    }
+    render() {
+        this.section = document.createElement('section');
+        this.section.textCOntent = 'Please pick an ipsum';
+        return this.section;
+
+    }
      
 }

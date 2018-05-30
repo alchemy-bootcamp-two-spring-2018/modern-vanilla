@@ -1,5 +1,5 @@
 import Template from './Template.js';
-import data from './data.js';
+import ipsum from './data.js';
 
 const template = new Template(({ length }) => `
     <h1>${length} Ipsums </h1>
