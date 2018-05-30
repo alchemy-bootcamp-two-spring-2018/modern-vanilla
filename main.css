@@ -5,7 +5,7 @@ body {
 
 main {
     display: grid;
-    grid-template: 805px 100px 1000px 100px/ 20% 20% auto;
+    grid-template: 805px 100px 900px 100px/ 20% 20% auto;
     grid-template-areas: 
         "header header header"
         ". . ."
@@ -31,7 +31,7 @@ h2 {
     position: relative;
     top: 550px;
     transform: rotate(-90deg);
-    color: #4A849F;
+    color: #B4D6C6;
     margin: 0px;
 }
 
@@ -76,10 +76,12 @@ ul {
     transition:all 0.3s ease;
     font-size: 1.25em;
     line-height: 1.75em;
+    padding-left: 20px;
 }
 
 .list>li:hover {
-    background: #B4D6C6;
+    background: #4A849F;
+    color: white;
 }
 
 #viewer {
@@ -88,12 +90,6 @@ ul {
     padding: 20px;
     margin-right: 50px;
 }
-
-/* #viewer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 #viewer h2 {
     font-size: 3em;
@@ -104,6 +100,12 @@ ul {
     text-align: justify;
 }
 
+#viewer h5 {
+    font-size: 10em;
+    color: #d3e5dc;
+    margin: 0px;
+    padding-top: 200px;
+}
 
 @keyframes fadein {
     from { opacity: 0; }

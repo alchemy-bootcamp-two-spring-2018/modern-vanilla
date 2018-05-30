@@ -28,7 +28,9 @@ export default class IpsumViewer {
     }
     render() {
         this.section = document.createElement('section');
-        this.section.textContent = 'make a selection';
+        const initialMessage = document.createElement('h5');
+        initialMessage.textContent = 'make a selection';
+        this.section.appendChild(initialMessage);
         return this.section;
     }
 }

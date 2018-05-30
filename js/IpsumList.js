@@ -6,12 +6,11 @@ const listTemplate = new Template(() => {
         <h2>IPSUM LIST</h2>
         <ul class="list"></ul>
     `;
-
 });
 
-const ipsumTemplate = new Template(({ title }) => {
+const ipsumTemplate = new Template(({ category }) => {
     return `
-        <li>${title}</li>
+        <li>${category}</li>
     `;
 });
 
