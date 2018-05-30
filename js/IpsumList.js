@@ -8,9 +8,9 @@ const listTemplate = new Template(() => {
     `;
 });
 
-const ipsumTemplate = new Template(({ category }) => {
+const ipsumTemplate = new Template(({ title }) => {
     return `
-        <li>${category}</li>
+        <li>${title}</li>
     `;
 });
 
@@ -23,6 +23,13 @@ export default class IpsumList {
     render() {
         const dom = listTemplate.render();
         const ul = dom.querySelector('ul');
+
+        // const categories = this.ipsumList.map(ipsum => {
+        //     const { category } = this.ipsumList[i];
+        //     return { category };
+        // })
+
+
 
         this.ipsumList.map(ipsum => {
             const dom = ipsumTemplate.render(ipsum);
