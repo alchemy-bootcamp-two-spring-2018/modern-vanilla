@@ -3,14 +3,15 @@ import ipsum from './data.js';
 
 const template = new Template(({ length }) => `
     <h2>${length} Ipsums </h2>
-    <ul class="list"></ul>
+    <ul></ul>
 `);
-
-const ipsumTemplate = new Template(({ title, category, author, authorUrl, publishedOn, body }) => `
-    <li class="ipsum">
-        ${title} (${category}) ${author} ${authorUrl} ${publishedOn} ${body}
+//removed after title below: author, authorUrl, publishedOn, body
+const ipsumTemplate = new Template(({ title, category }) => `
+    <li>
+        ${title} (${category})
     </li>
 `);
+//removed from above after ${title} (${category}): ${author} ${authorUrl} ${publishedOn} ${body}
 
 export default class IpsumList {
     constructor(onSelect) {
@@ -32,6 +33,7 @@ export default class IpsumList {
             ul.appendChild(dom);
         });
 
+        console.log(ul);
         return dom;
     }
 }

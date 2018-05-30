@@ -15,6 +15,7 @@ const template = new Template(() => {
 export default class App {
     render() {
         const dom = template.render();
+
         const ipsumList = new IpsumList(selected => {
             ipsumViewer.update(selected);
         });
@@ -22,6 +23,8 @@ export default class App {
         const section = dom.getElementById('list');
         const listDom = ipsumList.render();
         section.appendChild(listDom);
+        
+        
 
         const ipsumViewer = new IpsumViewer();
         const viewer = dom.getElementById('viewer');
