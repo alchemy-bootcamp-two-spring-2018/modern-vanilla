@@ -33,7 +33,6 @@ export default class IpsumList {
             ul.appendChild(dom);
         });
 
-        console.log(ul);
         return dom;
     }
 }
