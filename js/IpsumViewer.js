@@ -1,16 +1,20 @@
 import Template from './Template.js';
 
-const template = new Template(({ title, category }) => {
+const template = new Template(({ title, category, author, authorUrl, publishedOn, body }) => {
 
     return `
-    <h4>${title} ${category}</h4>
+    <h4>${title} ${category} ${author} ${authorUrl} ${publishedOn} ${body}</h4>
     
     <ul>
-        <li>Title:</li>
-        <li>Category:</li>
+        <li>Title: ${title}</li>
+        <li>Category:${category}</li>
+        <li>Author:${author}</li>
+        <li>Author URL:${authorUrl}</li>
+        <li>Published On:${publishedOn}</li>
+        <li>Body:${body}</li>
     </ul> 
         `;
-});
+}); 
 
 export default class IpsumViewer { 
     update(ipsum) {

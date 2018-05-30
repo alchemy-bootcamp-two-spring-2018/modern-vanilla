@@ -10,7 +10,7 @@ const ipsumTemplate = new Template(({ title, category, author, authorUrl, publis
     <li class="ipsum">
         ${title} (${category}) ${author} ${authorUrl} ${publishedOn} ${body}
     </li>
-    `);
+`);
 
 export default class IpsumList {
     constructor(onSelect) {
@@ -26,17 +26,12 @@ export default class IpsumList {
             const dom = ipsumTemplate.render(ipsum);
             const li = dom.querySelector('li');
             li.addEventListener('click', () => {
+                this.onSelect(ipsum);
 
             });
-
             ul.appendChild(dom);
-
         });
 
         return dom;
-
-
-
-
     }
 }
