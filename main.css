@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+}
+
+div {
+    display: flex;
+}
+
+.ipsum {
+    list-style: none;
+    cursor: pointer;
+}
+
+.ipsum:hover {
+    background: #eee;
+}
+
+#list {
+    border: 2px solid blue;
+    width: 200px;
+    height: 500px;
+    margin-right: 20px;
+}
+
+#viewer {
+    border: 2px solid blue;
+    width: 500px;
+    height: 500px;
+    overflow-x: auto;
+
+}
+
+#viewer img {
+    display: none;
+}
+
+#h2-viewer {
+    margin-bottom: 18.67px;
+}
