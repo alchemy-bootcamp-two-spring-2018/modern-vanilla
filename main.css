@@ -1,0 +1,42 @@
+body {
+    color: white;
+    text-align: center;
+    background: rgb(9, 0, 58);
+    font-family: sans-serif;
+}
+
+#list {
+    float: left;
+    text-align: left;
+    width: 300px;
+    overflow-y: auto;
+    height: 600px;
+    padding: 5px;
+    background: rgb(0, 82, 114);
+}
+
+#viewer {
+    text-align: left;
+    height: 600px;
+    overflow: auto;
+    padding: 5px;
+    background: rgb(112, 86, 124);
+}
+
+.list {
+    padding: 10px;
+    list-style: none;
+    
+}
+
+.ipsum {
+    cursor: pointer;
+}
+
+.ipsum:hover {
+    background: rgb(223, 125, 253);
+}
+
+img {
+    float: right;
+}
