@@ -33,12 +33,16 @@ h2 {
 .choice {
     font-weight: bold;
 }
+
+#main-list {
+    width: fit-content;
+}
 #main-list:hover {
     color: green;
     background-color:aquamarine;
     border-radius: 4px;
     padding-right: 4px;
     padding-left: 4px;
-    width: fit-content;
+    
    
 }
