@@ -1,0 +1,65 @@
+#root{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+
+}
+body {
+    background-color: rgb(248, 248, 220);
+}
+#list {
+    border-style: solid;
+    border-width:1px; 
+    width: 20%;
+    height: 650px;
+    float: left;
+    overflow-x: auto;
+}
+#header {
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color:  rgb(206, 173, 90);
+    
+}
+.list {
+    text-align: left;
+    list-style: none;
+    padding-left: 5px;
+}
+.data:hover {
+    cursor: pointer;
+    background-color:  rgba(199, 179, 130, 0.795);
+}
+#viewer {
+    border-style: solid;
+    border-width: 1px;
+    height: 650px;
+    overflow: auto;
+    margin: 0px;
+
+}
+h2 {
+    margin-top: 0px;
+    height: 50px;
+    font-size: 40px;
+    margin-bottom: 0px;
+    background-color: rgb(206, 173, 90);
+
+}
+#image {
+    width: 400px;
+
+}
+li {
+    margin-top: 0px;
+    padding-top: 5px;
+}
+hr {
+    margin: 0px;
+}
+ul {
+    margin-top: 2px;
+}
