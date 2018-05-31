@@ -4,13 +4,13 @@ const template = new Template(({ title, category, author, authorUrl, publishedOn
     
     return `
     <h4> ${title} </h4>
-    ${body}
-    
+
     <ul>
         <li class="choice">Category: ${category}</li>
         <li class="choice">Author: ${author}</li>
         <li class="choice">Author URL: ${authorUrl}</li>
         <li class="choice">Published on: ${publishedOn}</li>
+        <li><strong>Sample Text: </strong>${body}</li>
     </ul> 
     `;
 });
@@ -29,6 +29,6 @@ export default class IpsumViewer {
         this.section = document.createElement('section');
         this.section.textContent = 'Please select an ipsum';
         return this.section;
-        //'please select' string showing at bottom of page. rendering after title list
+        //'please select' string showing at bottom of page. 
     }     
 }

@@ -5,13 +5,13 @@ const template = new Template(({ length }) => `
     <h2>${length} Ipsums </h2>
     <ul></ul>
 `);
-//removed after title below: author, authorUrl, publishedOn, body
+
 const ipsumTemplate = new Template(({ title, category }) => `
     <li id="main-list">
         ${title} (${category})
     </li>
 `);
-//removed from above after ${title} (${category}): ${author} ${authorUrl} ${publishedOn} ${body}
+
 
 export default class IpsumList {
     constructor(onSelect) {

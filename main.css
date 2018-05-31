@@ -4,7 +4,7 @@ img {
 }
 li {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 body {
     width: 70%;
@@ -20,14 +20,15 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 500;
+   
 }
 
 h2 {
-    font-size: 3em;
-    font-weight: 700;
-    margin-bottom: 80px;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .choice {
@@ -37,12 +38,11 @@ h2 {
 #main-list {
     width: fit-content;
 }
+
 #main-list:hover {
     color: green;
     background-color:aquamarine;
     border-radius: 4px;
     padding-right: 4px;
-    padding-left: 4px;
-    
-   
+    padding-left: 4px;  
 }
