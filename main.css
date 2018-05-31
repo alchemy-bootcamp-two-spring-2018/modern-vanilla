@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+img.pull-right {
+    float: right;
+}
+
+img.pull-left {
+    float: left;
+}
+
+#list {
+    float: left;
+    width: 300px;
+    overflow-y: auto;
+}
+
+#viewer {
+    height: 80%;
+    overflow: auto;
+    padding: 5px;
+}
+
+.list {
+    padding: 5px;
+}
+
+.ipsum {
+    text-align: justify;
+}
+
+.item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.view-item {
+    list-style: none;
+}
+
+.item:hover {
+    background: rgb(219, 248, 214);
+}
