@@ -1,12 +1,6 @@
 Modern Vanilla: Ipsum Viewer
 ===
 
-## Code Wars Challenge
-
-Complete [today's Kata.](https://www.codewars.com/kata/fixme-replace-all-dots)
-
-## Lab
-
 Create a ipsum viewer that displays a lists of ipsum's and when an ipsum is clicked, it shows a detail view with full information.
 
 ## Components
@@ -21,22 +15,21 @@ App
   + IpsumViewer
 ```
 
-## Component Details
+## State
 
 * `App` 
     * owns the "selected" state (initially `null`)
-    * passes `IpsumList` a callback function, `onSelect`
-    * displays the two child components
+    * passes Ipsum List a callback function, `onSelect`
 * `IpsumList`
-    * owns the "ipsum list" state (initially import of `js/data.js`)
+    * owns the "ipsums" state (initially import of `js/data.js`)
     * calls the passed `onSelect` when an ipsum is selected, _passing the corresponding object_ to the `onSelect` function
-    * show name and category (maybe find images?)
 * `IpsumViewer`
     * gets passed the `selected` (only via `update`)
     * if `selected` is `null` displays message to make a selection
 
 ## Requirements
 
+* Use "props" (objects with properties) to pass data in `constructor` and `update`. Package and destructure as needed.
 * No use of `document.` in components, use template literals to create html. `IpsumList` can create individual items without needing child components.
 
 ## Rubric
