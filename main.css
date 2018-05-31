@@ -1,0 +1,74 @@
+body {
+    background: url(oregon-textures.jpg) #333 no-repeat center center fixed;
+    background-size: cover; 
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+#list {
+    float: left;
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+#list li {
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+#list li:hover {
+    color: turquoise;
+    background-color: #333;
+}
+
+
+#viewer {
+    float: right;
+    margin-right: 10%;
+    padding: 10px;
+    border: 6px double paleturquoise;
+    background-color: #333;
+}
+
+#viewer h3 {
+    color: paleturquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#viewer h4 {
+    color: rgb(98, 153, 153);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#viewer p {
+    max-width: 800px;
+}
+
+#viewer img {
+    display: none;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color: paleturquoise;
+    letter-spacing: .2em;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
