@@ -2,15 +2,15 @@ import Template from './Template.js';
 
 const template = new Template(({ title }) => {
     return `
-    <h4>${title}</h4>
-    <ul>
-        <li>title: ${title}</li>
-        <li>category: ${category}</li>
-        <li>Author: ${Author}</li>
-        <li>authorUrl: ${authorUrl}</li>
-        <li>publishedOn: ${publishedOn}</li>
-        <li>body: ${body}</li>
-    </ul>
+        <h4>${title}</h4>
+        <ul>
+            <li>title: ${title}</li>
+            <li>category: ${category}</li>
+            <li>Author: ${Author}</li>
+            <li>authorUrl: ${authorUrl}</li>
+            <li>publishedOn: ${publishedOn}</li>
+            <li>body: ${body}</li>
+        </ul>
     `;
 });
 

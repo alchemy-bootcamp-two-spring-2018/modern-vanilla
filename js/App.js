@@ -1,5 +1,5 @@
 import Template from './Template.js';
-import ipsum from './ipsumList.js';
+import ipsumList from './ipsumList.js';
 import ipsumViewer from './ipsumViewer.js';
 
 const template = new Template(() => {

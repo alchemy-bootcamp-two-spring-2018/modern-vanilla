@@ -1,15 +1,16 @@
-import Template from 'template.js';
-import ipsum from 'data.js';
+import Template from './Template.js';
+import ipsum from './data.js';
 
 const template = new Template(({ length }) => `
     <h2>${length} ipsum</h2>
     <ul class="list"></ul>
-    `);
-const ipsumTemplate = new Template(({ title }) => `
-<li class="ipsum">
+`);
 
-    ${title}
-</li>
+const ipsumTemplate = new Template(({ title }) => `
+    <li class="ipsum">
+
+        (${title})
+    </li>
 `);
 
 export default class IpsumList {
