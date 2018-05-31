@@ -1,0 +1,48 @@
+img {
+    height: 200px;
+    width: auto;
+}
+li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+body {
+    width: 70%;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: cornsilk;
+  
+}
+
+h1, h2 {
+    padding-left: 48px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 500;
+   
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.choice {
+    font-weight: bold;
+}
+
+#main-list {
+    width: fit-content;
+}
+
+#main-list:hover {
+    color: green;
+    background-color:aquamarine;
+    border-radius: 4px;
+    padding-right: 4px;
+    padding-left: 4px;  
+}
