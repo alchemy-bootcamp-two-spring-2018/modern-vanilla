@@ -1,12 +1,12 @@
 import Template from './Template.js';
 
-const template = new Template(({ title }) => {
+const template = new Template(({ title, category, author, authorUrl, publishedOn, body }) => {
     return `
         <h4>${title}</h4>
         <ul>
             <li>title: ${title}</li>
             <li>category: ${category}</li>
-            <li>Author: ${Author}</li>
+            <li>Author: ${author}</li>
             <li>authorUrl: ${authorUrl}</li>
             <li>publishedOn: ${publishedOn}</li>
             <li>body: ${body}</li>

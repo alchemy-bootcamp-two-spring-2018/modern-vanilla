@@ -1,6 +1,6 @@
 import Template from './Template.js';
-import ipsumList from './ipsumList.js';
-import ipsumViewer from './ipsumViewer.js';
+import IpsumList from './ipsumList.js';
+import IpsumViewer from './ipsumViewer.js';
 
 const template = new Template(() => {
     return `
