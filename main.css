@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+h4 {
+    text-align: center;
+}
+
+.list li {
+    width: 220px;
+    position: sticky;
+}
+.list li:hover {
+    background-color: rgb(226, 198, 43);
+    cursor: pointer;
+}
+
+#viewer {
+    width: auto;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: 10px;
+    border: 2px black solid;
+}

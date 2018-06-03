@@ -1,18 +1,17 @@
+
+
+
 export default class Template {
-    constructor(templateFunction) {
+    constructor(template) {
         // store the template function for use in the render method
-        this.templateFunction = templateFunction;
+        this.template = template;
     }
-
+    
     render(data) {
-        // create a template element to convert string to html
-        const templateElement = document.createElement('template');
-
-        // call the template function with the supplied data,
-        // and set the result as the innerHTML of the template element
-        templateElement.innerHTML = this.templateFunction(data);
-
-        // return the document fragment that contains the actual DOM elements
-        return templateElement.content;
+        const template = document.createElement('template');
+        template.innerHTML = this.template(data);
+        const fragment = template.content;
+        const childNodes = fragment;
+        return childNodes.length === 1 ? childNodes[0] : fragment;
     }
 }
