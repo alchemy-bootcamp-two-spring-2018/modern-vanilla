@@ -4,7 +4,7 @@
 export default class Template {
     constructor(templateFunction) {
         // store the template function for use in the render method
-        this.templateFunction = templateFunction;
+        this.template = template;
     }
     
     render(data) {
