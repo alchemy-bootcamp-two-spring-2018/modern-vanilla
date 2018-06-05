@@ -1,7 +1,7 @@
 import Template from './Template.js';
 
 const template = new Template (({ title, body }) => {
-    return`
+    return `
     <h2>${title}</h2>
     ${body}
     `;

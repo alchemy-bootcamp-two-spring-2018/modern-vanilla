@@ -1,7 +1,6 @@
 import Template from './Template.js';
 import IpsumList from './IpsumList.js';
 import IpsumViewer from './IpsumViewer.js';
-// import IpsumViewer from './IpsumViewer.js';
 
 const template = new Template (() => {
     return `

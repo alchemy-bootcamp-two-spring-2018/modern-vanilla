@@ -6,7 +6,7 @@ const template = new Template(({ length }) => `
     <ul></ul>
 `);
 
-const ipsumTemplate = new Template(({ title, category}) => `
+const ipsumTemplate = new Template(({ title, category }) => `
     <li>
         ${title} (${category})    
     </li>
